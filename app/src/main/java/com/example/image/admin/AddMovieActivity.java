@@ -247,12 +247,7 @@ public class AddMovieActivity extends AppCompatActivity {
 
 
     private void AddMovie(Uri uriImage) {
-//        Calendar c=Calendar.getInstance();
-//        SimpleDateFormat curDate=new SimpleDateFormat("dd-MM-yyyy");
-//        saveCurDate=curDate.format(c.getTime());
-//        SimpleDateFormat curTime=new SimpleDateFormat("HH:mm:ss");
-//        saveCurTime=curTime.format(c.getTime());
-//        randomKey=saveCurDate+"-"+saveCurTime;
+
         String maPhim = etMaPhim.getText().toString();
         String tenPhim = etTenPhim.getText().toString();
         String theLoai = tvTheLoai.getText().toString();

@@ -52,6 +52,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout.addDrawerListener(drawerToggle);
         drawerToggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+
+
+
         getSupportFragmentManager().beginTransaction().replace(R.id.frame,
                 new FragmentHome()).commit();
 

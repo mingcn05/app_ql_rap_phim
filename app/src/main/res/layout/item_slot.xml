@@ -7,10 +7,11 @@
     android:layout_marginTop="2dp"
     android:layout_width="21dp"
     android:layout_height="21dp">
+
     <TextView
         android:id="@+id/ivSlot"
-        android:gravity="center"
-        android:background="@color/white"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center" />
 </androidx.cardview.widget.CardView>

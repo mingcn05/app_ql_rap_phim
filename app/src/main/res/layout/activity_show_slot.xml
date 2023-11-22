@@ -188,7 +188,7 @@
 
                 <TextView
                     android:id="@+id/tvTenPhim"
-                    android:text="Đa vũ trụ hỗn loạn"
+                    android:text="Đường Cùng"
                     android:textStyle="bold"
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
@@ -200,7 +200,7 @@
 
                 <TextView
                     android:id="@+id/tvHTvaDT"
-                    android:text="3D - C13"
+                    android:text="A1"
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"

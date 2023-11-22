@@ -16,12 +16,12 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
-
+import com.example.image.model.DateTime;
 import com.example.image.AdminMainActivity;
 import com.example.image.R;
 import com.example.image.adapter.DateAdapter;
 import com.example.image.model.Date;
-import com.example.image.model.DateTime;
+
 import com.example.image.model.Movie;
 import com.example.image.model.Room;
 import com.example.image.model.SetUp;

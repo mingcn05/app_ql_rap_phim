@@ -56,6 +56,9 @@ public class InforMovieActivity extends AppCompatActivity implements View.OnClic
         tvDaoDien.setText(movie.getDaoDien());
         tvDienVien.setText(movie.getDienVien());
         tvNgonNgu.setText(movie.getNgonNgu());
+
+
+
         Glide.with(InforMovieActivity.this)
                 .load(movie.getAnh())
                 .into(image);
@@ -63,12 +66,6 @@ public class InforMovieActivity extends AppCompatActivity implements View.OnClic
     }
 
     private void setVideo() {
-//        youTubePlayerView.getYouTubePlayerWhenReady(new YouTubePlayerCallback() {
-//            @Override
-//            public void onYouTubePlayer(@NonNull YouTubePlayer youTubePlayer) {
-//                youTubePlayer.cueVideo(movie.getTrailer(), 0);
-//            }
-//        });
         getLifecycle().addObserver(youTubePlayerView);
         tracker = new YouTubePlayerTracker();
         youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {

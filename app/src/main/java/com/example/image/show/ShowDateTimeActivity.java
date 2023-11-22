@@ -16,14 +16,13 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import com.example.image.model.DateTime;
 import com.example.image.R;
 import com.example.image.adapter.DateAdapter;
 import com.example.image.adapter.FormAdapter;
 import com.example.image.adapter.TimeAdapter;
 import com.example.image.model.Date;
-import com.example.image.model.DateTime;
-import com.google.android.exoplayer2.C;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -64,6 +63,7 @@ public class ShowDateTimeActivity extends AppCompatActivity
         Intent intent = getIntent();
         maP = intent.getStringExtra("maP");
         initView();
+
         tvNgay.setText(dateNow());
         ShowDate();
         ShowForm();
@@ -266,8 +266,8 @@ public class ShowDateTimeActivity extends AppCompatActivity
         String kq = "Hôm nay, " + ngayThang;
 
         Calendar calendar = Calendar.getInstance();
-        int year = calendar.get(Calendar.YEAR);
-        ngayChieu_c = String.format("%02d", dayOfMonth) + "-" + String.format("%02d", monthValue) + "-" + String.valueOf(year);
+        //int year = calendar.get(Calendar.YEAR);
+        ngayChieu_c = String.format("%02d", dayOfMonth) + "-" + String.format("%02d", monthValue) ;
         return kq;
     }
 

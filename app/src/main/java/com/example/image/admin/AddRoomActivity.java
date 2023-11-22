@@ -133,7 +133,7 @@ public class AddRoomActivity extends AppCompatActivity implements View.OnClickLi
             slotAdapter = new AddRoomAdapter(this, listSlot);
             rvChoNgoi.setAdapter(slotAdapter);
 
-            String[] cho = list.split(", ");
+            String[] cho =  list.split(", ");
             for(String i : cho){
                 listSlot.add(i);
             }
