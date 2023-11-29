@@ -115,7 +115,7 @@ public class FragmentHome extends Fragment implements ShowAllAdapter.ItemListene
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     Movie movie = dataSnapshot.getValue(Movie.class);
-                    if(Float.valueOf(movie.getYeuThich()) - 9.0 >= 0.0 )
+                    if(Float.valueOf(movie.getYeuThich()) - 8.5 >= 0.0 )
                         mListPhoto.add(movie);
                 }
                 photoAdapter.notifyDataSetChanged();

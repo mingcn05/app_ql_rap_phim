@@ -94,10 +94,11 @@ public class IncomeActivity extends AppCompatActivity implements IncomeAdapter.I
                         date = "0" + d;
                     else
                         date = String.valueOf(d);
-                    if(m>8){
-                        date += "/" + (m+1) + "/" + y;
+                    if(m<10){
+                        date += "/0" + (m) + "/" + y;
+
                     }else{
-                        date += "/0" + (m+1) + "/" + y;
+                        date += "/" + (m) + "/" + y;
                     }
                     tvBatDau.setText(date);
                 }
@@ -118,10 +119,10 @@ public class IncomeActivity extends AppCompatActivity implements IncomeAdapter.I
                         date = "0" + d;
                     else
                         date = String.valueOf(d);
-                    if(m>8){
-                        date += "/" + (m+1) + "/" + y;
+                    if(m<10){
+                        date += "/0" + (m) + "/" + y;
                     }else{
-                        date += "/0" + (m+1) + "/" + y;
+                        date += "/" + (m) + "/" + y;
                     }
                     tvKetThuc.setText(date);
                 }

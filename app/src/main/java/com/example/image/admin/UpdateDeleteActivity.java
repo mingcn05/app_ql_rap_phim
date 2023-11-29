@@ -231,8 +231,8 @@ public class UpdateDeleteActivity extends AppCompatActivity implements View.OnCl
 
         // Duyệt qua các phần tử trong danh sách, thiết lập giá trị mặc định cho các checkbox
         for (int i = 0; i < theLoaiArray.length; i++) {
-            for (String l : list){
-                if (l.contains(theLoaiArray[i])) {
+            for (String j : list){
+                if (j.contains(theLoaiArray[i])) {
                     selectedTheLoai[i] = true;
                 }
             }

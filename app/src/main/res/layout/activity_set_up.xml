@@ -61,7 +61,7 @@
 
             <TextView
                 android:id="@+id/tvNgay"
-                android:text="Hôm nay, Ngày 9 tháng 5"
+                android:text="Hôm nay, Ngày 1 tháng 1"
                 android:textSize="16dp"
                 android:textColor="@color/white"
                 android:gravity="center_horizontal"

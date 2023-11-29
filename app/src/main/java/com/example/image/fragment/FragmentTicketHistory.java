@@ -63,7 +63,7 @@ public class FragmentTicketHistory extends Fragment implements TicketHistoryAdap
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     Ticket ticket = dataSnapshot.getValue(Ticket.class);
-                    total += Long.parseLong(ticket.getTongTien().replace(".", "").trim());
+                    total += Long.parseLong(ticket.getTongTien().replace(",", "").trim());
                     listTicket.add(ticket);
                 }
                 Collections.sort(listTicket, (ticket1, ticket2) -> {

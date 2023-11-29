@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.example.image.model.DateTime;
+//import com.example.image.model.DateTime;
 import com.example.image.R;
 import com.example.image.adapter.DateAdapter;
 import com.example.image.adapter.FormAdapter;
@@ -84,7 +84,6 @@ public class ShowDateTimeActivity extends AppCompatActivity
                 String ngayThang = "ngày " + String.valueOf(ngay) + " tháng " + String.valueOf(thang);
                 tvNgay.setText(thu + ", " + ngayThang);
                 ShowForm();
-
                 ShowTime();
                 formAdapter.setItemListener(new FormAdapter.ItemListener() {
                     @Override

@@ -95,10 +95,10 @@ public class AddMovieActivity extends AppCompatActivity {
                             date = "0" + d;
                         else
                             date = String.valueOf(d);
-                        if(m>8){
-                            date += "/" + (m+1) + "/" + y;
+                        if(m<10){
+                            date += "/0" + (m) + "/" + y;
                         }else{
-                            date += "/0" + (m+1) + "/" + y;
+                            date += "/" + (m) + "/" + y;
                         }
                         tvNgayPH.setText(date);
                     }
@@ -331,12 +331,12 @@ public class AddMovieActivity extends AppCompatActivity {
                 }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onProgress(@NonNull UploadTask.TaskSnapshot snapshot) {
-                        progressBarImage.setVisibility(View.VISIBLE);
+//                        progressBarImage.setVisibility(View.VISIBLE);
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        progressBarImage.setVisibility(View.VISIBLE);
+//                        progressBarImage.setVisibility(View.VISIBLE);
                     }
                 });
             }

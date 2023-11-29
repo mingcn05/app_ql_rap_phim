@@ -318,12 +318,10 @@ public class ShowSlotActivity extends AppCompatActivity implements SlotShowAdapt
                         root_user.addValueEventListener(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                for(DataSnapshot dataSnapshot1 : snapshot.getChildren()){
-                                    User user = dataSnapshot1.getValue(User.class);
+                                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                                    User user = dataSnapshot.getValue(User.class);
                                     if(user.getUsername().equals(email)){
-                                        String hoTen = user.getHo() + " " + user.getTen();
-
-
+                                        String hoTen = user.getTen();
                                         root_ticket.child(email1).child(currentDateTime)
                                                 .setValue(new Ticket(email, hoTen, tenPhim, hinhThuc, currentDate, currentTime, diaDiem, ngayChieu.replace("-", "/"), phongChieu, gioChieu, ghe, tongTien))
                                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
