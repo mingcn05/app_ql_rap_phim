@@ -9,7 +9,7 @@
     tools:context=".LoginActivity">
 
     <ImageView
-        android:src="@drawable/cinema_login"
+        android:src="@drawable/bg"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:layout_width="300dp"

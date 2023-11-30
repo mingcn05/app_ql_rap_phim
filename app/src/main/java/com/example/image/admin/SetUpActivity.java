@@ -347,7 +347,8 @@ public class SetUpActivity extends AppCompatActivity implements DateAdapter.Item
                                                                     child(movie.getMa()).
                                                                     child(hinhT.trim()).
                                                                     child(gioChieu).
-                                                                    setValue(new SetUp(movie.getMa(), diaDiem, soP, chooseDate, gioChieu, hinhT.trim(), room.getList()))
+                                                                    setValue(new SetUp(movie.getMa(), diaDiem, soP, chooseDate,
+                                                                            gioChieu, hinhT.trim(), room.getList()))
                                                                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                                                                         @Override
                                                                         public void onSuccess(Void unused) {

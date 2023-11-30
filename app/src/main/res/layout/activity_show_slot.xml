@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent">
         <TextView
-            android:text="Chọn ví trị ngồi"
+            android:text="Chọn ghế"
             android:textColor="@color/white"
             android:textSize="23dp"
             android:layout_width="match_parent"

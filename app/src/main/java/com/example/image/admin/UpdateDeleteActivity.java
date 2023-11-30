@@ -76,7 +76,6 @@ public class UpdateDeleteActivity extends AppCompatActivity implements View.OnCl
         root = FirebaseDatabase.getInstance().getReference("movie");
         reference = FirebaseStorage.getInstance().getReference();
         initView();
-        progressBar.setVisibility(View.INVISIBLE);
         btCapNhap.setOnClickListener(this);
         btXoa.setOnClickListener(this);
         Intent intent = getIntent();
@@ -198,7 +197,7 @@ public class UpdateDeleteActivity extends AppCompatActivity implements View.OnCl
         image = findViewById(R.id.image);
         etTenPhim = findViewById(R.id.etTenPhim);
         tvNgayPH = findViewById(R.id.tvNgayPH);
-        progressBar = findViewById(R.id.progressBar);
+
         etThoiLuong = findViewById(R.id.etThoiLuong);
         etYeuThich = findViewById(R.id.etYeuThich);
         etNoiDung = findViewById(R.id.etNoiDung);

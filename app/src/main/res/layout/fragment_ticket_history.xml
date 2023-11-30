@@ -16,7 +16,7 @@
 
         <TextView
             android:text="Tổng tiền: "
-            android:textColor="@color/orange"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="20dp"
             android:gravity="right"
@@ -28,7 +28,7 @@
             android:id="@+id/tvTongTra"
             android:text="1.000.000 VNĐ"
             android:textStyle="bold"
-            android:textColor="@color/orange"
+            android:textColor="@color/white"
             android:textSize="20dp"
             android:textAllCaps="true"
             android:gravity="center_horizontal"

@@ -244,9 +244,9 @@
             <TextView
                 android:text="TỔNG TIỀN"
                 android:textSize="20dp"
-                android:gravity="right"
+                android:gravity="left"
                 android:textStyle="bold"
-                android:textColor="@color/orange"
+                android:textColor="@color/black"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"/>
 
@@ -256,7 +256,7 @@
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:gravity="right"
-                android:textColor="@color/orange"
+                android:textColor="@color/black"
                 android:paddingRight="12dp"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"/>

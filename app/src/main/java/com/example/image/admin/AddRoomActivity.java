@@ -118,7 +118,7 @@ public class AddRoomActivity extends AppCompatActivity implements View.OnClickLi
             soGhe = Integer.valueOf(spSoGhe.getSelectedItem().toString());
             soHang = Integer.valueOf(spSoHang.getSelectedItem().toString());
 
-            int c = 65;
+            int c = 65; //A
             for(int i = 0; i < soGhe * soHang; i++){
                 if(i%soGhe == 0){
                     list += String.valueOf((char) c) + ", ";
